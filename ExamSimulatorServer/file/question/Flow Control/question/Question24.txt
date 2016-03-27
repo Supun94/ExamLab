@@ -1,0 +1,30 @@
+
+
+
+Given:
+
+2. import java.util.*;
+3. public class HR {
+4. public static void main(String[] args) {
+5. List<Integer> i = new Vector<Integer>();
+6. i.add(3); i.add(2); i.add(5);
+7. int ref = 1;
+8. doStuff(ref);
+9. System.out.println(i.get(ref));
+10. }
+11. static int doStuff(int x) {
+12. return ++x;
+13. } }
+
+
+What is the result?
+
+A. 2
+
+B. 3
+
+C. 5
+
+D. Compilation fails.
+
+E. An exception is thrown at runtime.

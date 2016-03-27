@@ -1,0 +1,45 @@
+
+
+Given the following method signatures from ArrayList:
+
+boolean add(E e)
+protected void removeRange(int fromIndexInclusive, int toIndexExclusive)
+int size()
+
+and given:
+
+2. import java.util.*;
+3. public class MyUtil extends ArrayList {
+4. public static void main(String[] args) {
+5. MyUtil m = new MyUtil();
+6. m.add("w"); m.add("x"); m.add("y"); m.add("z");
+7. m.removeRange(1,3);
+8. System.out.print(m.size() + " ");
+9. MyUtil m2 = new MyUtil2().go();
+10. System.out.println(m2.size());
+11. }
+12. }
+13. class MyUtil2 {
+14. MyUtil go() {
+15. MyUtil m2 = new MyUtil();
+16. m2.add("1"); m2.add("2"); m2.add("3");
+17. m2.removeRange(1,2);
+18. return m2;
+19. } }
+
+
+What is the result?
+
+A. 1 1
+
+B. 1 2
+
+C. 2 1
+
+D. 2 2
+
+E. An exception is thrown at runtime.
+
+F. Compilation fails due to a single error.
+
+G. Compilation fails due to multiple errors.

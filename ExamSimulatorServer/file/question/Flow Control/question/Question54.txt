@@ -1,0 +1,23 @@
+
+
+Given:
+
+1. public class Glank implements Vonk { Jooker[] j; }
+2. abstract class Bostron { String yoodle; Bostron b; }
+3. interface Protefor { }
+4. interface Vonk extends Protefor { int x = 7; }
+5. class Jooker { Bostron b; }
+
+Which are true? (Choose all that apply.)
+
+A. Glanks have a Bostron.
+
+B. Jookers implement Protefors.
+
+C. Glanks implement Bostrons.
+
+D. Jookers have a String.
+
+E. Bostrons implement Vonks.
+
+F. Bostrons have a Bostron.

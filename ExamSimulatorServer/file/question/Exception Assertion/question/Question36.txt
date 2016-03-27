@@ -1,0 +1,30 @@
+
+
+Given:
+
+2. import java.io.*;
+3. interface Risky {
+4. String doStuff() throws Exception;
+5. Risky doCrazy();
+6. void doInsane();
+7. }
+8. class Bungee implements Risky {
+9. public String doStuff() throws IOException {
+10. throw new IOException();
+11. }
+12. public Bungee doCrazy() { return new Bungee(); }
+13. public void doInsane() throws NullPointerException {
+14. throw new NullPointerException();
+15. } }
+
+What is the result? (Choose all that apply.)
+
+A. Compilation succeeds.
+
+B. The Risky interface will not compile.
+
+C. The Bungee.doStuff() method will not compile.
+
+D. The Bungee.doCrazy() method will not compile.
+
+E. The Bungee.doInsane() method will not compile.

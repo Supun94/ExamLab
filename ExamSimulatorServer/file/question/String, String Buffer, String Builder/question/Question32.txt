@@ -1,0 +1,32 @@
+
+
+
+Given:
+
+3. class Stereo { void makeNoise() { assert false; } }
+4. public class BoomBox extends Stereo {
+5. public static void main(String[] args) {
+6. new BoomBox().go(args);
+7. }
+8. void go(String[] args) {
+9. if(args.length > 0) makeNoise();
+10. if(!args[0].equals("x")) System.out.println("!x");
+11. } }
+
+And, if the code compiles, the invocation:
+
+	java -ea BoomBox
+
+What is the result?
+
+A. !x
+
+B. Compilation fails.
+
+C. An AssertionError is thrown.
+
+D. A NullPointerException is thrown.
+
+E. An IllegalArgumentException is thrown.
+
+F. An ArrayIndexOutOfBoundsException is thrown.

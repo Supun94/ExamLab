@@ -1,0 +1,35 @@
+
+
+
+Given that the working directory is bigApp, and the following directory structure:
+
+bigApp
+ |-- classes
+ |      |-- com
+ |          |-- wickedlysmart
+ |-- source
+       |-- com
+            |-- wickedlysmart
+                      |-- BigAppClass2.java
+
+And the code:
+
+1. public class BigAppClass2 { int doMore() { return 17; } }
+
+And the following command-line invocations:
+
+I. javac -d source/com/wickedlysmart/BigAppClass2.java
+II. javac -d classes source/com/wickedlysmart/BigAppClass2.java
+III. javac -d classes/com/wickedlysmart source/com/wickedlysmart/BigAppClass2.java
+
+Which are true? (Choose all that apply.)
+
+A. Invocation I will compile the file and place the .class file in the bigApp directory.
+
+B. Invocation II will compile the file and place the .class file in the classes directory.
+
+C. Invocation I will compile the file and place the .class file in the wickedlysmart directory.
+
+D. Invocation II will compile the file and place the .class file in the wickedlysmart directory.
+
+E. Invocation III will compile the file and place the .class file in the wickedlysmart directory.

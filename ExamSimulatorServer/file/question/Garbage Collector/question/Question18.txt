@@ -1,0 +1,33 @@
+
+
+
+Given:
+
+1. public class Endless {
+2. public static void main(String[] args) {
+3. int i = 0;
+4. short s = 0;
+5. for(int j = 0, k = 0; j < 3; j++) ;
+6. for(int j = 0; j < 3; counter(j)) ;
+7. for(int j = 0, int k = 0; j < 3; j++) ;
+8. for(; i < 5; counter(5), i++) ;
+9. for(i = 0; i < 3; i++, System.out.print("howdy ")) ;
+10. }
+11. static int counter(int y) { return y + 1; }
+12. }
+
+What is the result? (Choose all that apply.)
+
+A. howdy howdy howdy
+
+B. The code runs in an endless loop.
+
+C. Compilation fails due to an error on line 5.
+
+D. Compilation fails due to an error on line 6.
+
+E. Compilation fails due to an error on line 7.
+
+F. Compilation fails due to an error on line 8.
+
+G. Compilation fails due to an error on line 9.

@@ -1,0 +1,33 @@
+
+
+Given:
+
+5. static String s = "";
+6. public static void main(String[] args) {
+7. try { doStuff(args); }
+8. catch (Error e) { s += "e "; }
+9. s += "x ";
+10. System.out.println(s);
+11. }
+12. static void doStuff(String[] args) {
+13. if(args.length == 0)
+14. throw new IllegalArgumentException();
+15. s += "d ";
+16. }
+
+And, if the code compiles, and given a java invocation with no arguments,
+ what is the result? (Choose all that apply.)
+
+A. d x
+
+B. e x
+
+C. d e x
+
+D. Compilation fails due to an error on line 8.
+
+E. Compilation fails due to an error on line 12.
+
+F. Compilation fails due to an error on line 14.
+
+G. An uncaught IllegalArgumentException is thrown.

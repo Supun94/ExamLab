@@ -1,0 +1,34 @@
+
+
+Given:
+
+1. public class LaSelva extends Beach {
+2. LaSelva() { s = "LaSelva"; }
+3. public static void main(String[] args) { new LaSelva().go(); }
+4. void go() {
+5. Beach[] ba = { new Beach(), new LaSelva(), (Beach) new LaSelva() };
+6. for(Beach b: ba) System.out.print(b.getBeach().s + " ");
+7. }
+8. LaSelva getBeach() { return this; }
+9. }
+10. class Beach {
+11. String s;
+12. Beach() { s = "Beach"; }
+13. Beach getBeach() { return this; }
+14. }
+
+What is the result?
+
+A. Beach LaSelva Beach
+
+B. Beach LaSelva LaSelva
+
+C. Beach LaSelva followed by an exception.
+
+D. Compilation fails due to an error at line 5.
+
+E. Compilation fails due to an error at line 6.
+
+F. Compilation fails due to an error at line 8.
+
+G. Compilation fails due to an error at line 13.

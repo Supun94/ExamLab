@@ -1,0 +1,32 @@
+QUESTION 41
+
+
+Given:
+
+2. import java.util.regex.*;
+3. public class Decaf {
+4. public static void main(String[] args) {
+5. Pattern p = Pattern.compile(args[0]);
+6. Matcher m = p.matcher(args[1]);
+7. while(m.find())
+8. System.out.print(m.group() + " ");
+9. } }
+
+And the three command-line invocations:
+
+I. java Decaf "0([0-7])?" "1012 0208 430"
+II. java Decaf "0([0-7])*" "1012 0208 430"
+III. java Decaf "0([0-7])+" "1012 0208 430"
+
+Which are true? (Choose all that apply.)
+
+A. All three invocations will return valid octal numbers.
+
+B. None of the invocations will return valid octal numbers.
+
+C. Only invocations II and III will return valid octal numbers.
+
+D. All three invocations will return the same set of valid octal numbers.
+
+E. Of those invocations that return only valid octal numbers, each invocation will return a
+   different set of valid octal numbers.

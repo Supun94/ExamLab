@@ -1,0 +1,33 @@
+
+
+
+Given that IllegalArgumentException extends RuntimeException, and given:
+
+11. static String s = "";
+12. public static void main(String[] args) {
+13. try { doStuff(); }
+14. catch (Exception ex) { s += "c1 "; }
+15. System.out.println(s);
+16. }
+17. static void doStuff() throws RuntimeException {
+18. try {
+19. s += "t1 ";
+20. throw new IllegalArgumentException();
+21. }
+22. catch (IllegalArgumentException ie) { s += "c2 "; }
+23. throw new IllegalArgumentException();
+24. }
+
+What is the result?
+
+A. c1 t1 c2
+
+B. c2 t1 c1
+
+C. t1 c1 c2
+
+D. t1 c2 c1
+
+E. Compilation fails.
+
+F. An uncaught exception is thrown at runtime.

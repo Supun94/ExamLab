@@ -1,0 +1,25 @@
+
+
+Given the proper imports and given:
+
+81. String in = "1234,77777,689";
+82. Scanner sc = new Scanner(in);
+83. sc.useDelimiter(",");
+84. while(sc.hasNext())
+85. System.out.print(sc.nextInt() + " ");
+86. while(sc.hasNext())
+87. System.out.print(sc.nextShort() + " ");
+
+What is the result?
+
+A. 1234 77777 689
+
+B. Compilation fails.
+
+C. 1234 77777 689 1234 77777 689
+
+D. 1234 followed by an exception.
+
+E. 1234 77777 689 followed by an exception.
+
+F. 1234 77777 689 1234 followed by an exception.

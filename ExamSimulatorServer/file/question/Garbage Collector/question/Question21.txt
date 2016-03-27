@@ -1,0 +1,46 @@
+
+
+
+Given the following directory structure:
+
+test -|
+      | - Finder.class
+      | - testdir -|
+                   | - subdir
+                   | - subdir2
+                   | - testfile.txt
+
+
+If test, testdir, subdir, and subdir2 are all directories, and Finder.class and
+testfile.txt are files, and given:
+
+import java.io.*;
+public class Finder {
+public static void main(String[] args) throws IOException {
+String[] files = new String[100];
+File dir = new File(args[0]);
+files = dir.list();
+System.out.println(files.length);
+} }
+
+And, if the code compiles, the invocation:
+
+	java Finder testdir
+
+What is the result?
+
+A. 1
+
+B. 2
+
+C. 3
+
+D. 4
+
+E. 5
+
+F. 100
+
+G. Compilation fails.
+
+H. An exception is thrown at runtime.

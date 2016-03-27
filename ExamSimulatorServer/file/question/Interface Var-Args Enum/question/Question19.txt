@@ -1,0 +1,33 @@
+
+
+
+Given:
+
+2. class Big {
+3. void doStuff(int x) { }
+4. }
+5. class Heavy extends Big {
+6. // void doStuff(byte b) { }
+7. // protected void doStuff(int x) throws Exception { }
+8. }
+9. public class Weighty extends Heavy {
+10. // void doStuff(int x) { }
+11. // String doStuff(int x) { return "hi"; }
+12. // public int doStuff(int x) { return 7; }
+13. // private int doStuff(char c) throws Error { return 1; }
+14. }
+
+Which method(s), if uncommented independently, compile? (Choose all that apply.)
+
+A. Line 6
+
+B. Line 7
+
+C. Line 10
+
+D. Line 11
+
+E. Line 12
+
+F. Line 13
+

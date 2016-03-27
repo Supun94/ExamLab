@@ -1,0 +1,29 @@
+
+
+
+Given:
+
+2. public class Contact {
+3. private String name;
+4. private String city;
+5. String getName() { return name; }
+Practice Exam 1 65
+6. void setName(String n) { name = n; }
+7. void setCity(String c) {
+8. if(c == null) throw new NullPointerException();
+9. city = c;
+10. }
+11. String getCity() { return city; }
+12. }
+
+Which are true? (Choose all that apply.)
+
+A. Compilation fails.
+
+B. The class is well encapsulated.
+
+C. The setCity() method is an example of loose coupling.
+
+D. The setCity() method has better encapsulation than setName().
+
+E. The setCity() method is cohesive; the setName() method is not.

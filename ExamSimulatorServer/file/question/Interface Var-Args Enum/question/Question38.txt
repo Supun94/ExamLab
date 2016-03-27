@@ -1,0 +1,28 @@
+
+
+
+Given:
+
+1. public class Networking {
+2. public static void main(String[] args) {
+3. List<Integer> i = new LinkedList<Integer>();
+4. i.add(4); i.add(2); i.add(5);
+5. int r = 1;
+6. doStuff(r);
+7. System.out.println(i.get(r));
+8. }
+9. static int doStuff(int x) {
+10. return ++x;
+11. } }
+
+What is the result?
+
+A. 2
+
+B. 4
+
+C. 5
+
+D. Compilation fails.
+
+E. An exception is thrown at runtime.

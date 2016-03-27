@@ -1,0 +1,34 @@
+
+
+
+Given the current directory is bigApp, and the directory structure:
+
+bigApp
+    |-- classes
+           |-- Cloned.class
+
+And the file:
+
+public class Cloned {
+public static void main(String[] args) {
+System.out.println("classes");
+assert(Integer.parseInt(args[0]) > 0);
+} }
+
+Which will produce the output "classes" followed by an AssertionError? (Choose all
+that apply.)
+
+A. java -cp classes Cloned -4
+
+B. java -cp classes -ea Cloned
+
+C. java -ea-cp classes Cloned -4
+
+D. java -ea -cp classes Cloned 4
+
+E. java -ea, cp classes Cloned 4
+
+F. java -ea -cp classes Cloned -4
+
+G. java -cp classes Cloned -4 -ea
+

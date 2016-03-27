@@ -1,0 +1,34 @@
+
+
+
+Given:
+
+3. class Employee {
+4. private String name;
+5. void setName(String n) { name = n; }
+6. String getName() { return name; }
+7. }
+8. interface Mungeable {
+9. void doMunging();
+10. }
+11. public class MyApp implements Mungeable {
+12. public void doMunging() { ; }
+13. public static void main(String[] args) {
+14. Employee e = new Employee();
+15. e.setName("bob");
+16. System.out.print(e.getName());
+17. } }
+
+Which are true? (Choose all that apply.)
+
+A. MyApp is-a Employee.
+
+B. MyApp is-a Mungeable.
+
+C. MyApp has-a Employee.
+
+D. MyApp has-a Mungeable.
+
+E. The code is loosely coupled.
+
+F. The Employee class is well encapsulated.

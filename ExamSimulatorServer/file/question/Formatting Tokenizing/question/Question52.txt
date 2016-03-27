@@ -1,0 +1,35 @@
+
+
+Given that Integer.parseInt() throws NumberFormatException, and given:
+
+3. public class Ladder {
+4. public static void main(String[] args) {
+5. try {
+6. System.out.println(doStuff(args));
+7. }
+8. catch (Exception e) { System.out.println("exc"); }
+9. doStuff(args);
+10. }
+11. static int doStuff(String[] args) {
+12. return Integer.parseInt(args[0]);
+13. } }
+
+And, if the code compiles, given the invocation
+
+java Ladder x
+
+What is the result? (Choose all that apply.)
+
+A. 0
+
+B. exc
+
+C. "exc" followed by an uncaught exception.
+
+D. Compilation fails due to an error on line 4.
+
+E. Compilation fails due to an error on line 9.
+
+F. Compilation fails due to an error on line 11.
+
+G. An uncaught exception is thrown with no other output.

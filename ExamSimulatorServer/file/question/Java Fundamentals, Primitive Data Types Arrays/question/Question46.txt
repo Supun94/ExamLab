@@ -1,0 +1,31 @@
+
+
+
+Given the following pseudo-code design for a new accounting system:
+
+class Employee
+maintainEmployeeInfo()
+connectToRDBMS()
+
+class Payroll
+setStateTaxCodes()
+findEmployeesByState()
+
+class Utilities
+getNetworkPrinter()
+
+
+Assuming the class and method names provide good definitions of their own functionalities,
+which are probably true? (Choose all that apply.)
+
+A. These classes appear to have low cohesion.
+
+B. These classes appear to have high cohesion.
+
+C. These classes appear to have weak validation.
+
+D. These classes appear to have strong validation.
+
+E. These classes appear to have weak encapsulation.
+
+F. These classes appear to have strong encapsulation.

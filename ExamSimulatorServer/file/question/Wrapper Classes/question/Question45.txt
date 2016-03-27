@@ -1,0 +1,22 @@
+
+
+Given:
+
+343. String s = "1234";
+344. StringBuilder sb =
+345. new StringBuilder(s.substring(2).concat("56").replace("7","6"));
+346. System.out.println(sb.append("89").insert(3,"x"));
+
+What is the result?
+
+A. 34x5689
+
+B. 345x689
+
+C. 345x789
+
+D. 23x45689
+
+E. 23x45789
+
+F. Compilation fails.

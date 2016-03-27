@@ -1,0 +1,30 @@
+
+
+Given:
+
+1. class Contact {
+2. String doStuff() { return "howdy "; }
+3. }
+4. class Supplier extends Contact {
+5. String doStuff() { return "send money "; }
+6. public static void main(String[] args) {
+7. Supplier s1 = new Supplier();
+8. Contact c3 = new Contact();
+9. Contact c1 = s1;
+10. Supplier s2 = (Supplier) c1;
+11. Supplier s3 = (Supplier) c3;
+12. Supplier s4 = new Contact();
+13. } }
+
+
+Which are true? (Choose all that apply.)
+
+A. Compilation succeeds.
+
+B. The code runs without exception.
+
+C. If the line(s) of code that do NOT compile (if any) are removed, the code runs without
+   exception.
+
+D. If the line(s) of code that do NOT compile (if any) are removed, the code throws an
+   exception at runtime.

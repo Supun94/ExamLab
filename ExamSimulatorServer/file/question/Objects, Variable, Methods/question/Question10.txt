@@ -1,0 +1,36 @@
+
+
+Given:
+
+2. class Paratrooper implements Runnable {
+3. public void run() {
+4. System.out.print(Thread.currentThread().getName() + " ");
+5. } }
+6. public class Jump {
+7. static Paratrooper p;
+8. static { p = new Paratrooper(); }
+9. { Thread t1 = new Thread(p, "bob"); t1.start(); }
+10. public static void main(String[] args) {
+11. new Jump();
+12. new Thread(new Runnable() { public void run()
+{ ; }}, "carol").start();
+13. new Thread(new Paratrooper(), "alice").start();
+14. }
+15. Jump() { Thread t2 = new Thread(p, "ted"); t2.start(); }
+16. }
+
+Which are true? (Choose all that apply.)
+
+A. The output could be ted bob alice
+
+B. The output could be bob alice carol
+
+C. The output could be bob carol ted alice
+
+D. Compilation fails due to an error on line 8.
+
+E. Compilation fails due to an error on line 9.
+
+F. Compilation fails due to an error on line 12.
+
+G. Compilation fails due to an error on line 15.

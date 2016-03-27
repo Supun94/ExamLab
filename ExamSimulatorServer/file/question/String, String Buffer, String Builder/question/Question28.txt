@@ -1,0 +1,33 @@
+
+
+
+Given:
+
+2. class Horse {
+3. String hands = "15";
+4. }
+5. class GaitedPony extends Horse {
+6. static String hands = "14";
+7. public static void main(String[] args) {
+8. String hands = "13.2";
+9. String result = new GaitedPony().getSize(hands);
+10. System.out.println(" " + result);
+11. }
+12. String getSize(String s) {
+13. System.out.print("hands: " + s);
+14. return hands;
+15. } }
+
+What is the result?
+
+A. 14
+
+B. 15
+
+C. hands: 13.2 14
+
+D. hands: 13.2 15
+
+E. Compilation fails.
+
+F. An exception is thrown at runtime.

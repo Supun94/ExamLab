@@ -1,0 +1,34 @@
+
+
+Given:
+
+2. public class Volume {
+3. Volume v;
+4. int size;
+5. public static void main(String[] args) {
+6. Volume myV = new Volume();
+Practice Exam 1 59
+7. final Volume v2;
+8. v2 = myV.doStuff(myV);
+9. v2.v.size = 7;
+10. System.out.print(v2.size);
+11. }
+12. Volume doStuff(Volume v3) {
+13. v3.size = 5;
+14. v3.v = new Volume();
+15. return v3;
+16. } }
+
+What is the result? (Choose all that apply.)
+
+A. 5
+
+B. 7
+
+C. Compilation fails due to an error on line 8.
+
+D. Compilation fails due to an error on line 9.
+
+E. Compilation fails due to an error on line 13.
+
+F. Compilation fails due to an error on line 14.

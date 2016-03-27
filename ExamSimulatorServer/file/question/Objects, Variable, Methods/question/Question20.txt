@@ -1,0 +1,20 @@
+
+
+
+Which are true? (Choose all that apply.)
+
+A. A given TreeSet’s ordering cannot be changed once it’s created.
+
+B. The java.util.Properties class is conceptually more like a List than like a Map.
+
+C. It’s a reasonable design choice to use a LinkedList when you want to design queue-like
+   functionality.
+
+D. Of the main types of collections flavors (Lists, Sets, Maps), Queues are conceptually most
+   like Sets.
+
+E. It’s programmatically easier to perform a non-destructive traversal of a PriorityQueue
+   than a LinkedList.
+
+F. Classes that implement the Set interface are usually well suited for applications that
+   require access to a collection based on an index.

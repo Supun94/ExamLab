@@ -1,0 +1,16 @@
+
+
+Which are true? (Choose all that apply.)
+
+A. For a specific object, it’s NOT possible for finalize() to be invoked more than once.
+
+B. It’s possible for objects, on whom finalize() has been invoked by the JVM, to avoid the GC.
+
+C. Overriding finalize() ensures that objects of that type will always be GCed when they
+become eligible.
+
+D. The finalize() method is invoked only for GC-eligible objects that are NOT part of
+“islands of isolation.”
+
+E. For every object that the GC considers collecting, the GC remembers whether
+finalize() has been invoked for that specific object.

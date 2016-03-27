@@ -1,0 +1,34 @@
+
+
+Given that:
+
+Exception is the superclass of IOException and
+IOException is the superclass of FileNotFoundException
+and
+
+2. import java.io.*;
+3. class Author {
+4. protected void write() throws IOException { }
+5. }
+64 Chapter 3: Practice Exam 1
+6. public class Salinger extends Author {
+7. private void write(int x) { }
+8. protected void write(long x) throws FileNotFoundException { }
+9. protected void write(boolean x) throws Exception { }
+10. protected int write(short x) { return 7; }
+11. public void write() { }
+12. }
+
+What is the result? (Choose all that apply.)
+
+A. Compilation succeeds.
+
+B. Compilation fails due to an error on line 7.
+
+C. Compilation fails due to an error on line 8.
+
+D. Compilation fails due to an error on line 9.
+
+E. Compilation fails due to an error on line 10.
+
+F. Compilation fails due to an error on line 11.

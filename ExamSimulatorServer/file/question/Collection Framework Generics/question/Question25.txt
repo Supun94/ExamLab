@@ -1,0 +1,36 @@
+
+
+
+Given:
+
+2. import java.util.*;
+3. public class Vinegar {
+4. public static void main(String[] args) {
+5. Set<Integer> mySet = new HashSet<Integer>();
+6. do1(mySet, "0"); do1(mySet, "a");
+7. do2(mySet, "0"); do2(mySet, "a");
+8. }
+9. public static void do1(Set s, String st) {
+10. s.add(st);
+11. s.add(Integer.parseInt(st));
+12. }
+13. public static void do2(Set<Integer> s, String st) {
+14. s.add(st);
+15. s.add(Integer.parseInt(st));
+16. } }
+
+Which are true? (Choose all that apply.)
+
+A. Compilation succeeds.
+
+B. Compilation fails due to an error on line 6.
+
+C. Compilation fails due to an error on line 13.
+
+D. Compilation fails due to an error on line 14.
+
+E. Compilation fails due to an error on line 15.
+
+F. If only the line(s) of code that don’t compile are removed, the code will run without exception.
+
+G. If only the line(s) of code that don’t compile are removed, the code will throw an exception.

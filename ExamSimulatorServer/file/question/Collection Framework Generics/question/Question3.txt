@@ -1,0 +1,36 @@
+
+
+Given:
+
+1. public class Fellowship {
+2. public static void main(String[] args) {
+3. // insert code here
+4. }
+5. }
+6. class Numinor {
+7. enum Members {
+8. HOBBITS(48), ELVES(74), DWARVES(50);
+9. int height;
+10. Members(int h) { height = h; }
+11. int getHeight() { return height; }
+12. }
+13. }
+
+And these four lines of code to be inserted, independently at line 3:
+
+I. int h0 = Numinor.Members.HOBBITS.getHeight();
+II. int h1 = Numinor.Members.getHeight();
+III. int h2 = Members.HOBBITS.getHeight();
+IV. int h3 = Members.height;
+
+Which are true? (Choose all that apply.)
+
+A. Line I will compile.
+
+B. Line II will compile.
+
+C. Line III will compile.
+
+D. Line IV will compile.
+
+E. Class Numinor will NOT compile.

@@ -1,0 +1,33 @@
+QUESTION 17
+
+
+Given:
+
+1. interface Syrupable {
+2. void getSugary();
+3. }
+66 Chapter 3: Practice Exam 1
+4. abstract class Pancake implements Syrupable { }
+5.
+6. class BlueBerryPancake implements Pancake {
+7. public void getSugary() { ; }
+8. }
+9. class SourdoughBlueBerryPancake extends BlueBerryPancake {
+10. void getSugary(int s) { ; }
+11. }
+
+Which are true? (Choose all that apply.)
+
+A. Compilation succeeds.
+
+B. Compilation fails due to an error on line 2.
+
+C. Compilation fails due to an error on line 4.
+
+D. Compilation fails due to an error on line 6.
+
+E. Compilation fails due to an error on line 7.
+
+F. Compilation fails due to an error on line 9.
+
+G. Compilation fails due to an error on line 10.

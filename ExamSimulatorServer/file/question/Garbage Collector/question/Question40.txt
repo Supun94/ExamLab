@@ -1,0 +1,28 @@
+
+
+
+Given:
+
+2. class Weed {
+3. protected static String s = "";
+4. final void grow() { s += "grow "; }
+5. static final void growFast() { s += "fast "; }
+6. }
+7. public class Thistle extends Weed {
+8. void grow() { s += "t-grow "; }
+9. void growFast() { s+= "t-fast "; }
+10. }
+
+Which are the FEWEST change(s) required for this code to compile? (Choose all that apply.)
+
+A. s must be marked public.
+
+B. Thistle.grow() must be marked final
+.
+C. Weed.grow() must NOT be marked final.
+
+D. Weed.growFast() must NOT be marked final.
+
+E. Weed.growFast() must NOT be marked static.
+
+F. Thistle.growFast() must be removed from the class.

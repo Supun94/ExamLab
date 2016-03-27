@@ -1,0 +1,35 @@
+QUESTION 47
+
+
+Given:
+
+2. class Dog {
+3. void makeNoise() { System.out.print("bark "); }
+4. static void play() { System.out.print("catching "); }
+5. }
+6. class Bloodhound extends Dog {
+7. void makeNoise() { System.out.print("howl "); }
+8. public static void main(String[] args) {
+9. new Bloodhound().go();
+10. super.play();
+11. super.makeNoise();
+12. }
+13. void go() {
+14. super.play();
+15. makeNoise();
+16. super.makeNoise();
+17. } }
+
+What is the result? (Choose all that apply.)
+
+A. catching howl bark catching bark
+
+B. catching howl howl catching howl
+
+C. catching howl bark, then an exception.
+
+D. Compilation fails due to an error on line 10.
+
+E. Compilation fails due to an error on line 11.
+
+F. Compilation fails due to an error on line 14.

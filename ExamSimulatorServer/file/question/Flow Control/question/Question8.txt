@@ -1,0 +1,38 @@
+
+
+Given:
+
+2. class SuperCool {
+3. static String os = "";
+4. void doStuff() { os += "super "; }
+5. }
+6. public class Cool extends SuperCool {
+7. public static void main(String[] args) {
+8. new Cool().go();
+9. }
+10. void go() {
+11. SuperCool s = new Cool();
+12. Cool c = (Cool)s;
+13. // insert code here
+14. }
+15. void doStuff() { os += "cool "; }
+16. }
+
+If the rest of the code compiles, which line(s) of code, 
+inserted independently at line 13,compile? (Choose all that apply.)
+
+A. c.doStuff();
+
+B. s.doStuff();
+
+C. this.doStuff();
+
+D. super.doStuff();
+
+E. c.super.doStuff();
+
+F. s.super.doStuff();
+
+G. this.super.doStuff();
+
+H. There are other errors in the code.

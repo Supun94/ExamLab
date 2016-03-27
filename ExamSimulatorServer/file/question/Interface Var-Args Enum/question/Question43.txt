@@ -1,0 +1,29 @@
+
+
+Given:
+
+1. public class Boxer1{
+2. Integer i;
+3. intx;
+4. publicBoxer1(inty) {
+5. x = i+y;
+6. System.out.println(x);
+7. }
+8. public static void main(String[] args) {
+9. newBoxer1(new Integer(4));
+10. }
+11.}
+
+What is the result?
+
+A. The value "4" is printed at the command line.
+
+B. Compilation fails because of an error in line 5.
+
+C. Compilation fails because of an error in line 9.
+
+D. A NullPointerException occurs at runtime.
+
+E. A NumberFormatException occurs at runtime.
+
+F. AnIllegalStateException occurs at runtime.

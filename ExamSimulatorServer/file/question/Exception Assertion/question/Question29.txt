@@ -1,0 +1,32 @@
+
+
+
+Given:
+
+2. public class Humping {
+3. public static void main(String[] args) {
+4. String r = "-";
+5. char[] c = {'a', 'b', 'c', 'z'};
+6. for(char c1: c)
+7. switch (c1) {
+8. case 'a': r += "a";
+9. case 'b': r += "b"; break;
+10. default: r += "X";
+11. case 'z': r+= "z";
+12. }
+13. System.out.println(r);
+14. } }
+
+What is the result?
+
+A. -abXz
+
+B. -abbXz
+
+C. -abbXzz
+
+D. -abbXzXz
+
+E. Compilation fails due to a single error.
+
+F. Compilation fails due to multiple errors.

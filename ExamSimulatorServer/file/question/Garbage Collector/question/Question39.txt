@@ -1,0 +1,31 @@
+
+
+
+Given:
+
+1. import java.util.*;
+2. public class Unturned {
+3. public static void main(String[] args) {
+4. String[] towns = {"aspen", "vail", "t-ride", "dillon"};
+5. MySort ms = new MySort();
+6. Arrays.sort(towns, ms);
+7. System.out.println(Arrays.binarySearch(towns, "dillon"));
+8. }
+9. static class MySort implements Comparator<String> {
+10. public int compare(String a, String b) {
+11. return b.compareTo(a);
+12. } } }
+
+What is the most likely result?
+
+A. -1
+
+B. 1
+
+C. 2
+
+D. 3
+
+E. Compilation fails.
+
+F. An exception is thrown at runtime.

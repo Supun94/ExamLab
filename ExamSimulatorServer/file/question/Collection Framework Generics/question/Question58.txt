@@ -1,0 +1,26 @@
+
+
+Given:
+
+1. public class Hose <E extends Hose> {
+2. E innerE;
+3. public static E doStuff(E e, Hose<E> e2) {
+4. // insert code here
+5. }
+6. public E getE() {
+7. return innerE;
+8. } }
+
+Which can be inserted, independently at line 4, for the code to compile? (Choose all that apply.)
+
+A. return e;
+
+B. return e.getE();
+
+C. return e2;
+
+D. return e2.getE();
+
+E. return new Hose().getE();
+
+F. Compilation fails regardless of which return is inserted.

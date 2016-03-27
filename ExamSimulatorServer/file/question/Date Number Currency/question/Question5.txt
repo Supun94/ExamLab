@@ -1,0 +1,32 @@
+
+Given:
+
+3. public class BirdHouse {
+4. public static void main(String[] args) {
+5. String r = "0";
+6. int x = -1, y = -5;
+7. if(x < 5)
+8. if(y > 0)
+9. if(x > y)
+10. r += "1";
+11. else r += "2";
+12. else r += "3";
+13. else r += "4";
+14. System.out.println(r);
+15. } }
+
+What is the result?
+
+A. 0
+
+B. 01
+
+C. 02
+
+D. 03
+
+E. 013
+
+F. 023
+
+G. Compilation fails.

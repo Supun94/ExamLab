@@ -1,0 +1,38 @@
+
+
+Given:
+
+2. public class Bang extends Thread {
+3. static Thread t1, t2, t3;
+4. public static void main(String[] args) throws Exception {
+5. t1 = new Thread(new Bang());
+6. t2 = new Thread(new Bang());
+7. t3 = new Thread(new Bang());
+8. t1.start(); t2.start(); t3.start();
+9. }
+10. public void run() {
+11. for(int i = 0; i < 500; i++) {
+12. System.out.print(Thread.currentThread().getId() + " ");
+13. if(i == 250)
+14. try {
+15. System.out.print("**" + t1.getId() + "**");
+16. t1.sleep(600);
+17. }
+18. catch (Exception e) { }
+19. } } }
+
+Which are true? (Choose all that apply.)
+
+A. Compilation fails.
+
+B. An exception is thrown at runtime.
+
+C. Bang will execute for a second or two.
+
+D. Bang will execute for at least 10 minutes.
+
+E. Thread t1 will almost certainly be the last thread to finish.
+
+F. Thread t1 will almost certainly be the first thread to finish.
+
+G. It’s difficult to predict which thread will be the last to finish.

@@ -1,0 +1,35 @@
+
+
+
+Given:
+
+1. import java.util.*;
+2. class Priorities {
+3. public static void main(String[] args) {
+4. PriorityQueue toDo = new PriorityQueue();
+5. toDo.add("dishes");
+6. toDo.add("laundry");
+7. toDo.add("bills");
+8. toDo.offer("bills");
+9. System.out.print(toDo.size() + " " + toDo.poll());
+10. System.out.print(" " + toDo.peek() + " " + toDo.poll());
+11. System.out.println(" " + toDo.poll() + " " + toDo.poll());
+12. } }
+
+What is the result?
+
+A. 3 bills dishes laundry null null
+
+B. 3 bills bills dishes laundry null
+
+C. 3 dishes dishes laundry bills null
+
+D. 4 bills bills dishes laundry null
+
+E. 4 bills bills bills dishes laundry
+
+F. 4 dishes laundry laundry bills bills
+
+G. Compilation fails.
+
+H. An exception is thrown at runtime.

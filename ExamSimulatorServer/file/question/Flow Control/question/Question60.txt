@@ -1,0 +1,43 @@
+
+
+Given:
+
+2. public class Hug implements Runnable {
+3. static Thread t1;
+4. static Hold h, h2;
+5. public void run() {
+6. if(Thread.currentThread().getId() == t1.getId()) h.adjust();
+7. else h2.view();
+8. }
+9. public static void main(String[] args) {
+10. h = new Hold();
+11. h2 = new Hold();
+12. t1 = new Thread(new Hug());
+13. t1.start();
+14. new Thread(new Hug()).start();
+15. } }
+16. class Hold {
+17. static int x = 5;
+18. synchronized void adjust() {
+19. System.out.print(x-- + " ");
+20. try { Thread.sleep(200); } catch (Exception e) { ; }
+21. view();
+22. }
+23. synchronized void view() {
+24. try { Thread.sleep(200); } catch (Exception e) { ; }
+25. if(x > 0) adjust();
+26. } }
+
+Which are true? (Choose all that apply.)
+
+A. Compilation fails.
+
+B. The program could deadlock.
+
+C. The output could be 5 4 3 2 1
+
+D. The program could produce thousands of characters of output.
+
+E. If the sleep() invocations were removed the chances of deadlock would decrease.
+
+F. If the view() method was not synchronized the chances of deadlock would decrease.

@@ -1,0 +1,28 @@
+
+
+
+Given:
+
+3. public class Stealth {
+4. public static void main(String[] args) {
+5. Integer i = 420;
+6. Integer i2;
+7. Integer i3;
+8. i2 = i.intValue();
+9. i3 = i.valueOf(420);
+10. System.out.println((i == i2) + " " + (i == i3));
+11. } }
+
+What is the result?
+
+A. true true
+
+B. true false
+
+C. false true
+
+D. false false
+
+E. Compilation fails.
+
+F. An exception is thrown at runtime.

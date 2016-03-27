@@ -1,0 +1,36 @@
+
+
+
+Given:
+
+3. public class OffRamp {
+4. public static void main(String[] args) {
+5. int [] exits = {0,0,0,0,0,0};
+6. int x1 = 0;
+7.
+8. for(int x = 0; x < 4; x++) exits[0] = x;
+9. for(int x = 0; x < 4; ++x) exits[1] = x;
+10.
+11. x1 = 0; while(x1++ < 3) exits[2] = x1;
+12. x1 = 0; while(++x1 < 3) exits[3] = x1;
+13.
+14. x1 = 0; do { exits[4] = x1; } while(x1++ < 7);
+15. x1 = 0; do { exits[5] = x1; } while(++x1 < 7);
+16.
+17. for(int x: exits)
+18. System.out.print(x + " ");
+19. } }
+
+What is the result?
+
+A. 3 3 2 2 6 6
+
+B. 3 3 3 2 7 6
+
+C. 3 3 3 2 7 7
+
+D. 4 3 3 2 7 6
+
+E. 4 3 3 2 7 7
+
+F. Compilation fails....

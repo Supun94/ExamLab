@@ -1,0 +1,25 @@
+
+
+Given that "it, IT" and "pt" are valid Locale codes, and given:
+
+41. Date d = new Date();
+42. DateFormat df;
+43. Locale[] la = {new Locale("it", "IT"), new Locale("pt")};
+44. for(Locale l: la) {
+45. df = DateFormat.getDateInstance(DateFormat.FULL, l);
+46. System.out.println(d.format(df));
+47. }
+
+Which are true? (Choose all that apply.)
+
+A. An exception will be thrown at runtime.
+
+B. Compilation fails due to an error on line 43.
+
+C. Compilation fails due to an error on line 45.
+
+D. Compilation fails due to an error on line 46.
+
+E. Classes from the java.text package are used in this code.
+
+F. Classes from the java.util package are used in this code.

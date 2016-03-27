@@ -1,0 +1,16 @@
+
+
+
+When using the java.io.Console class, which are true? (Choose all that apply.)
+
+A. Objects of type java.io.Console are created using a constructor from the same class.
+
+B. Objects of type java.io.Console are created using a method from the java.io.File class.
+
+C. Objects of type java.io.Console are created using a method from the java.lang.System class.
+
+D. Objects of type java.io.Console are created using a method from the java.lang.Object class.
+
+E. The method(s) designed to read passwords can optionally disable the echoing of user input.
+
+F. The method(s) designed to read passwords return a char[].

@@ -1,0 +1,24 @@
+
+
+Given a partial API:
+
+Final class Items implements no interfaces and has one constructor:
+
+Items(String name, int value)
+
+And given that you want to make collections of Items objects and sort them (using classes
+and interfaces in java.lang or java.util), sometimes by name, and sometimes by value,
+
+which are true? (Choose all that apply.)
+
+A. It’s likely that you’ll use the Arrays class.
+
+B. It’s likely that you’ll use the Collections class.
+
+C. It’s likely that you’ll implement Comparable at least twice.
+
+D. It’s likely that you’ll implement Comparator at least twice.
+
+E. It’s likely that you’ll implement the compare() method at least twice.
+
+F. It’s likely that you’ll implement the compareTo() method at least twice.

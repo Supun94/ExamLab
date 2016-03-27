@@ -1,0 +1,30 @@
+
+
+Given:
+
+1. class c1 { }
+2. class c2 { }
+3. interface i1 { }
+4. interface i2 { }
+5. class A extends c2 implements i1 { }
+6. class B implements i1 implements i2 { }
+7. class C implements c1 { }
+8. class D extends c1, implements i2 { }
+9. class E extends i1, i2 { }
+10. class F implements i1, i2 { }
+
+What is the result? (Choose all that apply.)
+
+A. Class A does not compile.
+
+B. Class B does not compile.
+
+C. Class C does not compile.
+
+D. Class D does not compile.
+
+E. Class E does not compile.
+
+F. Class F does not compile.
+
+G. Compilation succeeds for all of the classes.

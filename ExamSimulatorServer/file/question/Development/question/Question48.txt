@@ -1,0 +1,30 @@
+
+
+Given:
+
+3. public class Baskin {
+4. public static void main(String[] args) {
+5. int i = 4;
+6. int j = 1;
+7.
+8. assert(i > Integer.valueOf(args[0]));
+9. assert(j > Integer.valueOf(args[0])): "error 1";
+10. assert(j > i): "error 2": "passed";
+11. } }
+
+And, if the code compiles, given the following two command-line invocations:
+
+I. java -ea Baskin 2
+II. java -ea Baskin 0
+
+Which are true? (Choose all that apply.)
+
+A. Compilation fails.
+
+B. Invocations I and II will throw an AssertionError that will add String data to the
+   program’s execution log.
+
+C. Invocations I and II will throw an AssertionError that will add String data to the
+   program’s stack trace.
+
+D. Not all of the assert statements use assertions appropriately.

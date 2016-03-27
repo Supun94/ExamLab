@@ -1,0 +1,32 @@
+
+
+Given:
+
+1. import java.util.*;
+2. public class Drunken {
+3. public static void main(String[] args) {
+4. Set<Stuff> s = new HashSet<Stuff>();
+5. s.add(new Stuff(3)); s.add(new Stuff(4)); s.add(new Stuff(4));
+6. s.add(new Stuff(5)); s.add(new Stuff(6));
+7. s = null;
+8. // do more stuff
+9. }
+10. }
+11. class Stuff {
+12. int value;
+13. Stuff(int v) { value = v; }
+14. }
+
+When line 8 is reached, how many objects are eligible for garbage collection?
+
+A. 4
+
+B. 5
+
+C. 6
+
+D. 8
+
+E. 10
+
+F. 12

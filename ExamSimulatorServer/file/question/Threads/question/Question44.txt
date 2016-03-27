@@ -1,0 +1,35 @@
+
+
+
+Given:
+
+2. public class Later {
+3. public static void main(String[] args) {
+4. boolean earlyExit = new Later().test1(args);
+5. if(earlyExit) assert false;
+6. new Later().test2(args);
+7. }
+8. boolean test1(String[] a) {
+9. if (a.length == 0) return false;
+Practice Exam 1 81
+10. return true;
+11. }
+12. private void test2(String[] a) {
+13. if (a.length == 2) assert false;
+14. } }
+
+Which are true? (Choose all that apply.)
+
+A. Compilation fails.
+
+B. The assertion on line 5 is appropriate.
+
+C. The assertion on line 13 is appropriate.
+
+D. "java -ea Later" will run without error.
+
+E. "java -ea Later x" will run without error.
+
+F. "java -ea Later x y" will run without error.
+
+G. "java -ea Later x y z" will run without error.

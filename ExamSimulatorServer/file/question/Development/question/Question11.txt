@@ -1,0 +1,29 @@
+
+
+Click the Exhibit button.
+What is the result?
+
+11. public class Person {
+12. String name = "No name";
+13. publicPerson(String nm) { name = nm; }
+14. }
+15.
+16. public class Employee extends Person {
+17. String empID = "0000";
+18. publicEmployee(String id) { empID = id; }
+19. }
+20.
+21. public class EmployeeTest {
+22. public static void main(String[] args){
+23. Employee e = new Employee("4321");
+24. System.out.println(e.empID);
+25. }
+26. }
+
+A. 4321
+
+B. 0000
+
+C. An exception is thrown at runtime.
+
+D. Compilation fails because of an error in line 18.

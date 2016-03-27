@@ -1,0 +1,30 @@
+
+
+Given:
+
+2. class Chilis {
+3. Chilis(String c, int h) { color = c; hotness = h; }
+4. String color;
+5. int hotness;
+6. public boolean equals(Object o) {
+7. if(this == (Chilis)o) return true;
+8. return false;
+9. }
+10. public String toString() { return color + " " + hotness; }
+11. }
+
+If instances of class Chilis are to be used as keys in a Map,
+ which are true? (Choose all that apply.)
+
+A. Without overriding hashCode(), the code will not compile.
+
+B. As it stands, the equals() method has been legally overridden.
+
+C. It’s possible for such keys to find the correct entries in the Map.
+
+D. It’s NOT possible for such keys to find the correct entries in the Map.
+
+E. As it stands, the Chilis class legally supports the equals() and hashCode() contracts.
+
+F. If hashCode() was correctly overridden, it would make retrieving Map entries 
+   by key easier.

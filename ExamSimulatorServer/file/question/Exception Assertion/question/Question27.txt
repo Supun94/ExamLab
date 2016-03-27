@@ -1,0 +1,27 @@
+
+
+
+Given that FileNotFoundException extends IOException, and given:
+
+2. import java.io.*;
+3. public class MacPro extends Laptop {
+4. public static void main(String[] args) {
+5. new MacPro().crunch();
+6. }
+7. // insert code here
+8. }
+9. class Laptop {
+10. void crunch() throws IOException { }
+11. }
+
+Which method(s), inserted independently at line 7, compile? (Choose all that apply.)
+
+A. void crunch() { }
+
+B. void crunch() throws Exception { }
+
+C. void crunch(int x) throws Exception { }
+
+D. void crunch() throws RuntimeException { }
+
+E. void crunch() throws FileNotFoundException { }

@@ -1,0 +1,32 @@
+
+
+
+Given:
+
+1. import java.util.*;
+2. public class Garage {
+3. public static void main(String[] args) {
+4. Map<String, String> hm = new HashMap<String, String>();
+5. String[] k = {null, "2", "3", null, "5"};
+6. String[] v = {"a", "b", "c", "d", "e"};
+7.
+8. for(int i=0; i<5; i++) {
+9. hm.put(k[i], v[i]);
+10. System.out.print(hm.get(k[i]) + " ");
+11. }
+12. System.out.print(hm.size() + " " + hm.values() + "\n");
+13. } }
+
+What result is most likely?
+
+A. a b c a e 4 [c, b, a, e]
+
+B. a b c d e 4 [c, b, a, e]
+
+C. a b c d e 4 [c, d, b, e]
+
+D. a b c, followed by an exception.
+
+E. An exception is thrown with no other output.
+
+F. Compilation fails due to error(s) in the code.

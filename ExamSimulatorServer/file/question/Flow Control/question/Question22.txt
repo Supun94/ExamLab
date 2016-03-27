@@ -1,0 +1,30 @@
+
+
+
+Given:
+
+1. public class Grids {
+2. public static void main(String[] args) {
+3. int [][] ia2;
+4. int [] ia1 = {1,2,3};
+5. Object o = ia1;
+6. ia2 = new int[3][3];
+7. ia2[0] = (int[])o;
+8. ia2[0][0] = (int[])o;
+9. } }
+
+What is the result? (Choose all that apply.)
+
+A. Compilation fails due to an error on line 4.
+
+B. Compilation fails due to an error on line 5.
+
+C. Compilation fails due to an error on line 6.
+
+D. Compilation fails due to an error on line 7.
+
+E. Compilation fails due to an error on line 8.
+
+F. Compilation succeeds and the code runs without exception.
+
+G. Compilation succeeds and an exception is thrown at runtime.

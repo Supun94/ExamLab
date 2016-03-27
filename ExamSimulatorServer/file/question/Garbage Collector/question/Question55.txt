@@ -1,0 +1,25 @@
+
+
+Given that the root directory contains a subdirectory called "office" that contains some files
+for a Java application, if "X" and "Y" are unknown arguments, and the following command is
+invoked from the root directory in order to create a JAR file containing the office directory:
+
+jar -cf X Y
+
+Which are true? (Choose all that apply.)
+
+A. X should be the file name of the JAR file, and Y should be "office".
+
+B. X should be "office", and Y should be the file name of the JAR file.
+
+C. Specifying a file name of the JAR file here is optional.
+
+D. If a file name is not specified here, a file named office.jar will be created.
+
+E. The file name, if specified, must be ended with .jar extension.
+
+F. It is required that the "office" directory must initially have a subdirectory called
+   "META-INF".
+
+G. All of the files other than .java and .class files must be initially placed in the META-INF
+   directory.

@@ -1,0 +1,40 @@
+
+
+
+Given:
+
+2. class Jiggy extends Thread {
+3. Jiggy(String n) { super(n); }
+4. public void run() {
+5. for(int i = 0; i < 100; i++) {
+6. if("t1".equals(Thread.currentThread().getName()) && i == 5) {
+7. new Jiggy("t3").start();
+8. throw new Error();
+9. }
+10. if("t2".equals(Thread.currentThread().getName()) && i == 5) {
+11. new Jiggy("t4").start();
+12. throw new Error();
+13. }
+14. System.out.print(Thread.currentThread().getName() + "-");
+15. }
+16. }
+17. public static void main(String[] args) {
+18. Thread t1 = new Jiggy("t1");
+19. Thread t2 = new Jiggy("t2");
+20. t1.setPriority(1); t2.setPriority(9);
+21. t2.start(); t1.start();
+22. } }
+
+Which are true? (Choose all that apply.)
+
+A. Compilation fails.
+
+B. After throwing error(s), t3 will most likely complete before t4.
+
+C. After throwing error(s), t4 will most likely complete before t3.
+
+D. The code will throw one error and then no more output will be produced.
+
+E. The code will throw two errors and then no more output will be produced.
+
+F. After throwing error(s) it’s difficult to determine whether t3 or t4 will complete first.
